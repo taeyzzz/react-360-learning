@@ -10,7 +10,8 @@
     "devtools": "react-devtools",
     "test": "jest",
     "predeploy": "rm -rf build && npm run bundle && cp -R static_assets build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "rm -rf build && npm run bundle && cp -R static_assets build",
   },
   "dependencies": {
     "react": "16.3.2",
